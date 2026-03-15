@@ -62,7 +62,7 @@ body {
 
 /* Focus effect */
 .form-group input:focus {
-    border-color: #4CAF50;
+    border-color: #4f51bd;
     outline: none;
 }
 
@@ -80,7 +80,7 @@ button {
 
 /* Button hover */
 button:hover {
-    background-color: #45a049;
+    background-color: #6245a0;
 }
 
 /* Bottom text */
@@ -91,7 +91,7 @@ p {
 
 /* Link */
 a {
-    color: #4b48a3;
+    color: #8986e6;
     text-decoration: none;
 }
 
