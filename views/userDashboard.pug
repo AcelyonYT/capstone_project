@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title User Dashboard
+    link(rel="stylesheet", href="dashboard.css")
+
+  body
+    .dashboard-container
+
+      // Header
+      header.header
+        img(src='logo.png' class='logo')
+        h1 Dashboard
+        a.logout(href="/logout") Logout
+        a.delete(href="/deleteAccount") Delete Account
+
+      // Sidebar Navigation
+      aside.sidebar
+        ul
+          li: a(href="/dashboard") Home
+          li: a(href="/settings") Settings
+          li: a(href="/messages") Messages
+
+      // Main Content
+      main.main-content
+        h2 Welcome!
