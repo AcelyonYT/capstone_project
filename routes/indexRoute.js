@@ -1,6 +1,8 @@
 import { Router } from "express"
+//import { getDatabaseInstance } from "../database/database.js"
 
 const router = Router()
+//const database = getDatabaseInstance()
 
 router.get("/", (req, res) => {
     res.render("accountCreate.pug")
@@ -25,5 +27,16 @@ router.get("/logout", (req, res) => {
 router.get("/deleteAccount", (req, res) => {
     res.render("login.pug")
 })
+
+// router.get("/some-protected-route", async (req, res, next) => {
+//     try {
+//         const db = database.getDb()
+//         const users = await db.collection("users").find({}).toArray()
+//         res.json(users)
+//     } catch (err) {
+//         next(err)
+//     }
+// })
+
 
 export default router
